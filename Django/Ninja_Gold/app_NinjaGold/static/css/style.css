@@ -1,0 +1,17 @@
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+form{
+    margin: 0 auto;
+    border : 2px solid black;
+    display: flex;
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}

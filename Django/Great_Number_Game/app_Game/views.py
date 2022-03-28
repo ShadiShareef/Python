@@ -16,6 +16,7 @@ def check(request):
         elif int(request.session['Ran_number']) > int(request.POST["my_number"]):
             request.session["value"]="you value is smaller than the namber "
 
+
         elif int(request.session['Ran_number']) < int(request.POST["my_number"]):
             request.session["value"]="you value is higher than the namber "
         
