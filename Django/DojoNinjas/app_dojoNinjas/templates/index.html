@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos & Ninjas with Template</title>
+    {% load static %}	
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div><form action="" method="post">
+        {% csrf_token %}
+        <h1>Add a Dojo</h1>
+        <input type="hidden" name="which_form" value="addDojo">
+
+        <label for="Name">Name</label>
+        <input type="text" name="addname">
+        <br><br>
+
+        <label for="addcity">City</label>
+        <input type="text" name="addcity">
+        <br><br>
+
+        <label for="addstate">State</label>
+        <input type="text" name="addstate">
+        <br><br>
+
+        <input type="submit" value="add">
+        <br><br>
+    </form> </div>
+    <div><form action="" method="post">
+        {% csrf_token %}
+        <h1>Add a Ninja</h1>
+        <input type="hidden" name="which_form" value="addNinja">
+        <label for="add_firstname">First Name</label>
+        <input type="text" name="add_firstname">
+        <br><br>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="add_lastname">
+        <br><br>
+
+        <label for="Dojoname">Dojo</label>
+        <select name="Dojoname" id="">
+        
+            <option value=""></option>
+
+        </select>
+        <br><br>
+        <input type="submit" value="add">
+    </form> </div>
+    
+
+    
+
+    
+</body>
+</html>
